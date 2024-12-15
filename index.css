@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("TT lakes/TTLakes-Medium.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("TT lakes/TTLakesCondensed-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  color: rgb(126, 126, 130);
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: #f8f8f8;
+}
+
+.swiper {
+  display: none;
+}
+
+/* Стили для мобилки */
+@media (max-width: 768px) {
+  .repair-area__heading {
+    height: 80px;
+    margin-bottom: 16px;
+    background: linear-gradient(
+      270deg,
+      rgb(248, 248, 248),
+      rgb(255, 255, 255) 98.614%
+    );
+    border-top: 1px rgb(217, 255, 245) solid;
+  }
+  .repair-area__heading-text {
+    margin: 16px;
+  }
+  .swiper {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .swiper-wrapper {
+    box-sizing: content-box;
+  }
+  .swiper-slide {
+    display: flex;
+  }
+  .swiper-slide img {
+    width: 240px;
+    height: 72px;
+  }
+  .company-logos,
+  .show-button,
+  .hidden-button {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .repair-area__heading {
+    height: 56px;
+
+    background: linear-gradient(
+      90deg,
+      rgb(248, 248, 248) 1.386%,
+      rgb(255, 255, 255) 100%
+    );
+    border-top: 1px rgb(217, 255, 245) solid;
+  }
+  .repair-area__heading-text {
+    margin: 16px 0 16px 24px;
+  }
+  .company-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin: 24px 0 0 24px;
+  }
+  .company-logos__imgs {
+    width: 224px;
+    height: 72px;
+  }
+  .show-button {
+    display: flex;
+    margin: 0px 0 0 24px;
+    color: rgb(27, 28, 33);
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+  }
+  .hidden-button {
+    display: flex;
+    margin: 24px 0 0 24px;
+    color: rgb(27, 28, 33);
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    display: none;
+  }
+  .hidden-button_show {
+    display: flex;
+    position: relative;
+    top: -50px;
+  }
+  .company-logos_hide {
+    /* display: none; */
+    height: 160px;
+    overflow: hidden;
+  }
+  .show-button_hide {
+    visibility: hidden;
+  }
+}
+@media (min-width: 1120px) {
+  .company-logos__imgs {
+    width: 240px;
+  }
+}
